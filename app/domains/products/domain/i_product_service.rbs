@@ -1,0 +1,7 @@
+module Products
+  module Domain
+    class IProductService
+      def get_feature_products: () -> Array[DiscountedProduct]
+    end
+  end
+end

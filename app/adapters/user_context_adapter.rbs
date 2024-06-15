@@ -1,0 +1,5 @@
+class UserContextAdapter < Products::Domain::IUserContext
+  attr_reader user: User
+
+  def initialize: (User) -> void
+end

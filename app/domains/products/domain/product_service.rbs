@@ -1,0 +1,10 @@
+module Products
+  module Domain
+    class ProductService < IProductService
+      attr_reader repository: Infra::IProductRepository
+      attr_reader user_context: IUserContext
+
+      def initialize: (Infra::IProductRepository, IUserContext) -> void
+    end
+  end
+end

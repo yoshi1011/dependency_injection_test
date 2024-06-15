@@ -1,0 +1,10 @@
+module Products
+  module Domain
+    class DiscountedProduct
+      attr_reader name: String
+      attr_reader unit_price: BigDecimal
+
+      def initialize: (String, BigDecimal) -> void
+    end
+  end
+end

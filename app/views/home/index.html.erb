@@ -1,0 +1,8 @@
+<h2>Products</h2>
+
+<div>
+  <%# ActiveRecordで十分と考えたがせっかくなのでViewModelを使ってみた %>
+  <% @products.each do |product| %>
+    <div><%= product.summary_text %></div>
+  <% end %>
+</div>

@@ -1,0 +1,7 @@
+module Products
+  module Infra
+    class ProductRepository < IProductRepository
+      def initialize: () -> void
+    end
+  end
+end

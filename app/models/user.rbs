@@ -1,0 +1,5 @@
+class User
+  type role = 'regular' | 'vip'
+
+  def role: () -> role
+end

@@ -1,0 +1,7 @@
+module Products
+  module Infra
+    class IProductRepository
+      def get_featured_products: () -> Array[Product]
+    end
+  end
+end
