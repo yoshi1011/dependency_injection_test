@@ -3,8 +3,9 @@ module Products
     class DiscountedProduct
       attr_reader name: String
       attr_reader unit_price: BigDecimal
+      attr_reader currency: String
 
-      def initialize: (String, BigDecimal) -> void
+      def initialize: (String, BigDecimal, String) -> void
     end
   end
 end

@@ -2,6 +2,8 @@ module Products
   module Domain
     class IUserContext
       def is_in_role: (User::role) -> bool
+
+      def currency: -> Currency::Domain::Currency
     end
   end
 end

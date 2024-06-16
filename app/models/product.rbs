@@ -1,3 +1,2 @@
 class Product
-  def apply_discount_for:(Products::Domain::IUserContext) -> Products::Domain::DiscountedProduct
 end

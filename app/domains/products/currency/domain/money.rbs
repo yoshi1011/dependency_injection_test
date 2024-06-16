@@ -1,0 +1,12 @@
+module Products
+  module Currency
+    module Domain
+      class Money
+        attr_reader amount: BigDecimal
+        attr_reader currency: Currency
+
+        def initialize: (BigDecimal, Currency) -> void
+      end
+    end
+  end
+end

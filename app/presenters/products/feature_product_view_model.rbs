@@ -2,8 +2,9 @@ module Products
   class FeatureProductViewModel
     attr_reader name: String
     attr_reader unit_price: BigDecimal
+    attr_reader currency: String
 
-    def initialize: (Product) -> void
+    def initialize: (Domain::DiscountedProduct) -> void
 
     def summary_text: () -> String
   end

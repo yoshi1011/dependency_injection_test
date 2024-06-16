@@ -1,12 +1,7 @@
 class Product < ApplicationRecord
   # Product エンティティ
 
-  # user IUserContext
-  def apply_discount_for(user_context)
-    preferred = user_context.is_in_role('vip')
-
-    discount = preferred ? 0.95 : 1.00
-
-    Products::Domain::DiscountedProduct.new(name, unit_price * discount)
-  end
+  # 第3章ではRepositoryからActiveRecordデータをそのまま返していましたが、
+  # いろいろ不都合が生じたためPOROに変換することとした。
 end
+

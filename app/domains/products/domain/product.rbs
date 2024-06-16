@@ -1,0 +1,16 @@
+module Products
+  module Domain
+    class Product
+      attr_reader name: String
+      attr_reader unit_price: Currency::Domain::Money
+      attr_reader is_featured: bool
+      attr_reader currency: String
+
+      def initialize: (name: String, unit_price: BigDecimal, is_featured: bool, currency: String) -> void
+
+      def apply_discount_for:(IUserContext) -> DiscountedProduct
+
+      def with_unit_price: (Currency::Domain::Money) -> self
+    end
+  end
+end

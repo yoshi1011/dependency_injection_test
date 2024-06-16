@@ -1,0 +1,5 @@
+class Products::Currency::Domain::Currency
+  attr_reader code: String
+
+  def initialize: (String) -> void
+end

@@ -11,4 +11,8 @@ class UserContextAdapter < Products::Domain::IUserContext
   def is_in_role(role)
     @user.role == role
   end
+
+  def currency
+    Products::Currency::Domain::Currency.new(@user.currency)
+  end
 end

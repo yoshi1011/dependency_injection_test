@@ -1,5 +1,5 @@
 class UserContextAdapter < Products::Domain::IUserContext
   attr_reader user: User
 
-  def initialize: (User) -> void
+  def initialize: (User) -> Products::Currency::Domain::Currency
 end

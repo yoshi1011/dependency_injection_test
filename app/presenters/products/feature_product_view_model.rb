@@ -5,10 +5,11 @@ class Products::FeatureProductViewModel
   def initialize(product)
     @name = product.name
     @unit_price = product.unit_price
+    @currency = product.currency
   end
 
   def summary_text
-    # 設定した通貨に応じて金額出力が変わるようにしたいがめんどくさいので直書き
-    "#{@name} ($#{@unit_price})"
+    unit_name = @currency == 'JPY' ? '¥' : '$'
+    "#{@name} (#{unit_name}#{@unit_price})"
   end
 end

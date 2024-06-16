@@ -1,0 +1,9 @@
+module Products
+  module Currency
+    module Domain
+      class ICurrencyConverter
+        def exchange: (Money, Currency) -> Money
+      end
+    end
+  end
+end

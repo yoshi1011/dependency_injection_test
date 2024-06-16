@@ -1,0 +1,9 @@
+module Products
+  module Currency
+    module Domain
+      class ICurrencyConverter
+        def initialize: -> void
+      end
+    end
+  end
+end

@@ -3,8 +3,9 @@ module Products
     class ProductService < IProductService
       attr_reader repository: Infra::IProductRepository
       attr_reader user_context: IUserContext
+      attr_reader converter: Currency::Domain::ICurrencyConverter
 
-      def initialize: (Infra::IProductRepository, IUserContext) -> void
+      def initialize: (Infra::IProductRepository, IUserContext, Currency::Domain::ICurrencyConverter) -> void
     end
   end
 end

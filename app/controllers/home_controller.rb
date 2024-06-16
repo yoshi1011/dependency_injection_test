@@ -3,8 +3,9 @@ class HomeController < ApplicationController
     repository = Products::Infra::ProductRepository.new
     # めんどくさいのでUser.firstで固定
     user_context = UserContextAdapter.new(User.first)
+    converter = Products::Currency::Domain::CurrencyConverter.new
 
-    product_service = Products::Domain::ProductService.new(repository, user_context)
+    product_service = Products::Domain::ProductService.new(repository, user_context, converter)
     feature_products = product_service.get_feature_products
 
     @products = feature_products.map do |product|

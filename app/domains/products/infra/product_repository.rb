@@ -11,10 +11,7 @@ class Products::Infra::ProductRepository < Products::Infra::IProductRepository
     # 何もしない
   end
 
-  # Product::ActiveRecord_Relationで返しても問題はないが、
-  # 極力ActiveRecord要素を減らしておこうと思いあえてArrayとしている
   def get_featured_products
-    # Productエンティティを返したい
-    Product.all.to_a
+    Product.all.map{|p| Products::Domain::Product.new(name: p.name, unit_price: p.unit_price, is_featured: p.is_featured, currency: p.currency)}
   end
 end
