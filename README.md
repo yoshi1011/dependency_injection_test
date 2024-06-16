@@ -1,6 +1,8 @@
-# なぜ依存性を注入するのか 第3章 疎結合コードをRailsで書いてみた
+# なぜ依存性を注入するのか Railsで書いてみた
 
 ## Usage
+
+現在第3章の疎結合コードのみ書いてあります。
 
 ```sh
 docker compose up -d
@@ -19,4 +21,5 @@ http://localhost:3000 にアクセスする
 
 ## その他
 
-rbs_collectionやSteepfileがありますが全然使ってません
+rbsを書いてはいるが、主にIDEでの確認用に書いていて、Steepの利用にまでは至っていない。
+gem_rbs_collectionのRails関連の型周りでSyntaxErrorを吐きまくるため現状スルー。
